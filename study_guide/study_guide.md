@@ -6,6 +6,7 @@
 - [Domain 3: Technology – 33%](#domain-3-technology–33%)
 - [Domain 4: Billing and Pricing – 16%](#domain-4-billing-and-Pricing–16%)
 - [ What is considered out of scope for the target candidate?](#what-is-considered-out-of-scope-for-the-target-candidate?)
+- [Refernces for studying](#references-for-studying)
 
 ## Target candidate description
 The target candidate should have 6 months, or the equivalent, of active engagement with the AWS Cloud, 
@@ -69,6 +70,9 @@ able to perform. These items are considered out of scope for the exam:
 
 To view a detailed list of specific tools and technologies that might be covered on the exam, as well as lists 
 of in-scope AWS services, refer to the Appendix
+
+## References for studying
+- [Whitepapers](https://d0.awsstatic.com/whitepapers/aws-overview.pdf)
 
 
 
