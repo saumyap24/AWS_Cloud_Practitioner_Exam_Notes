@@ -1,10 +1,11 @@
 ## Content Outline:
 - [Target candidate description](#target-candidate-description)
 - [Test Domain](#test-domain)
-- [Domain 1: Cloud Concepts – 26%](#domain-1-cloud-concepts–26%)
+- [Domain 1: Cloud Concepts – 26%](#domain-1:-cloud-concepts--26%)
 - [Domain 2: Security – 25%](#domain-2-security–25%)
 - [Domain 3: Technology – 33%](#domain-3-technology–33%)
 - [Domain 4: Billing and Pricing – 16%](#domain-4-billing-and-Pricing–16%)
+- [ What is considered out of scope for the target candidate?](#what-is-considered-out-of-scope-for-the-target-candidate?)
 
 ## Target candidate description
 The target candidate should have 6 months, or the equivalent, of active engagement with the AWS Cloud, 
