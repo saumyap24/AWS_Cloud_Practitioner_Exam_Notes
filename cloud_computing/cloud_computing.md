@@ -111,7 +111,7 @@
         - stbility
         - availability zone in a region are connected through <i><u> low latency links</u></i>
 - flexible to place instances and store data in multiple regions
-![region architecture](../images/cloud-computing-images-ppt/region_architecture.png)
+ 
 - [For more information...](../global_infrastructure/global_infrastructure.md)
 
 ## Seven advantages to cloud

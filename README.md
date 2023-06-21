@@ -10,4 +10,5 @@ Created this notes while I was preparing for my cloud practitioner exam. Hope th
 - [Study Guide](./study_guide/study_guide.md)
 - [Cloud Computing](./cloud_computing/cloud_computing.md)
 - [Global Infrastructure](./global_infrastructure/global_infrastructure.md)
+- [Cloud Architechture](./Cloud_Architecture_Terminologies/cloud_architecture.md)
 
