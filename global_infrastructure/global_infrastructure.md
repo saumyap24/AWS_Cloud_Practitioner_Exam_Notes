@@ -65,7 +65,7 @@
 - ### What is fault domain ?
     - A section of a network that is <i>vulnerable to damage if a critical device or system fails </i>
     - Purpose: if failure occurs it will not cascade outside that domain, <u> <i> limiting the damage possible</i></u>
-        <img src="../images/global_infrastructure/fault_domain_meme.png" width="250"/>
+        <img src="../images/global_infrastructure/fault_domain_meme.png" width="40%"/>
     - <b> What is fault level?</b>
         - a collection of fault domains
     - Scope of fault domain could be:
