@@ -13,6 +13,10 @@
     - [AWS wavelength zones](#aws-wavelength-zones)
     - [Data Residency](#data-residency)
     - [AWS for Government](#aws-for-government)
+        - [GocCloud](#GovCloud)
+    - [Sustainability](#sustainability)
+    - [AWS Ground Station](#AWS-Ground-Station)
+    - [AWS OutPosts](#Aws-outposts)
 
 ## Global Infrastructure
 --- 
@@ -76,7 +80,7 @@
     - Each Amazon region is completely <i>isolated</i> from the other Amazon regions
         - Achieves <b><i><u>greatest possible fault tolerance and stability</u></b></i>
     - Each availability zone is <i>isolated</i> but AZs are connected in a Region through <i>low-latency links</i>
-        - Each availability zone is designed as <b><i><u>indenpendent failure zone</i></b></u> <i>{Failure zone is Fault Domai}</i>
+        - Each availability zone is designed as <b><i><u>indenpendent failure zone</i></b></u> <i>{Failure zone is Fault Domain}</i>
         - <b> Failure Zone</b> 
             - Availibility zones are physically separated by metropolitan region and are located in low flood zones
             - Uninterruptible power supply (UPS) and onsite genration facilities
@@ -128,13 +132,13 @@
     - for <u><i>content delivery or expedited upload</i></u>
     - <b> Amazon CloudFront </b>
         - point the website to CloudFront so that it will route requests to nearest <i>"Edge Location cache"</i>
-        - allows to choose an <u>origin</u> (such as web server pr storage ) that will be source of cached
+        - allows to choose an <u>origin</u> (such as web server or storage ) that will be source of cached
         - caches the contents returned by origin to various Edge Locations in the world
     - <b> Amazon S3 Transfer Acceleration </b>
         - allows to generate <i>specific URL</i> that can be used by end users to <u><i>upload files to nearby "Edge Location" </i></u>
         - Once the file is uploaded to Edge Location it <u><i>moves much faster</i></u> within AWS Network to reach S3
     - <b> Amazon Global Accelerator </b>
-        - global accelerator deploys within Edge Location such that <i><u>user traffic is sent to "Edge Location" instaed of web application</i></u>
+        - global accelerator deploys within Edge Location such that <i><u>user traffic is sent to "Edge Location" instead of web application</i></u>
         - finds the optimal path from the end user to web-servers
 
 ## AWS Direct Connect
@@ -180,7 +184,7 @@
 ## AWS Wavelength Zones
 --- 
 - <b>AWS Wavelength Zones</b> allows for <i><u>edge-computing on 5G Networks</u></i>
-- Applications have <i><u>ultra-low latency </u></i> being close to users
+- Applications have <i><u> ultra-low latency </u></i> being close to users
 - AWS partnered with Telecom companies to utilize 5G networks. (e.g. Verizon, Vodafone, SK telecom)
 - create a Subnet tied to a wavelength zone and then you can launch virtual machines (VMs) to the edge of the targeted 5G Networks
  
@@ -192,7 +196,7 @@
 - <b> What is compliance Boundaries?</b>
     - <i> A regulatory compliance (legal requirement) by a government or organisation where data and cloud resources are allowed to reside </i>
 - <b> What is Data Sovereignty?</b>
-    - <i>It isjurisdictional control or legal authority that can be used over data because it's physical location is within jurisdictional boundaries.</i>
+    - <i>It is jurisdictional control or legal authority that can be used over data because it's physical location is within jurisdictional boundaries.</i>
 - For workloads that need to meet compliance boundaries:
     - <b>AWS outposts</b> is physical rack of servers that you can put in your data center. Your data will reside wherever outpost physically resides
     - <b>AWS config</b> is a Policy code service
@@ -200,6 +204,64 @@
         - If they deviate you can add check to be alerted or to auto remediate
     - <b>IAM Policies</b> can be written explicitly deny access to apecific AWS Regions
         - A <b> Service Control Policy</b> are permissions applied organisation wide
+
+## AWS for Government
+---
+
+- <b>What is Public sector?</b>
+    - Public sector includes public goods and governmental services such as:
+        - military
+        - law enforcements
+        - infrastructure
+        - public transit
+        - public education
+        - health care
+        - the government itself
+- AWS can be utilised by public sector or organisations developing cloud workloads for the public sector
+    - achieves by <i><u> regulatroy compliance programs</u></i> along with specific government and security controls
+
+- ### GovCloud
+    - <b>Federal Risk and Authorisation Management Program (FedRAMP) </b>
+        - A US-government program provides standard approrahc to security assessment, authorization and continous monitoring for cloud products and services.
+    - <b> What is GovCloud?</b>
+        - A Cloud service provider (CSP) offers an isolated region to rub FedRAMP workloads
+    - AWS GovCloud Regions - allows customers to host sensitive  <b>Controlled Unclassified Information</b> and other workloads
+    - Only operated and accessed by U.S citizens on U.S. soil or who pass a screening test (root account holders)
+
+## Sustainability
+---
+
+- Goals:
+    1. Renewable ENergy : 
+        - planning to be 100% renewable energy by 2025
+        - purchases and retires environamental attributes to cover non-renewable energy 
+            - Renewable Energy Credits (RECs)
+            - Guarantess of Origin (Gos)
+    2. Cloud Efficiency:
+        - 3.6 times more energy efficient that median of US enterprise data centers surveyed
+    3. Water Stewardship:
+        - Direct evaporative technology to cool our data centers
+        - use of recycled water for cooling
+        - On-site water treatment - allows reuse of water for more cycles 
+        - Monitor water efficiency metrics
+
+## AWS Ground Station
+---
+
+- lets to <b>control satelite communications</b> , process data and scale operations without building or managing ground station infrastructure
+- Use cases:
+    - weather forecasting 
+    - surface imaging 
+    - communications
+    - video boradcasts
+- To use the ground station:
+    - schedule a contract (select satelite, start and end time and the gorund location )
+    - Use the AWS ground station EC2 AMI to launch EC2 instances that will uplink and downlink data during the contact or recieve downlinked data in Amazon S3 bucket
+
+
+## AWS Outposts
+---
+![AWS Outposts](../images/global_infrastructure/AWS_outposts.png)
 
 
 
