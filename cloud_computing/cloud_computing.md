@@ -10,7 +10,6 @@
 - [Cloud Computing deployment models use cases](#cloud-computing-deployment-models-use-cases)
 - [Benefits of cloud computing](#benefits-of-cloud-computing)
 - [Global Infrastructure](#global-infrastructure)
-    - [Global Infrastructure Regional vs Global](#global-infrastructure-regional-vs-global)
 - [Seven advantages to cloud](#seven-advantages-to-cloud)
 - [Reference links](#reference-links)
 
@@ -113,32 +112,7 @@
         - availability zone in a region are connected through <i><u> low latency links</u></i>
 - flexible to place instances and store data in multiple regions
 ![region architecture](../images/cloud-computing-images-ppt/region_architecture.png)
-- <b>Availability Zone </b> is physical location made up of one or more datacenter.
-    - AZs are represented by a region code, followed by a letter indetifier eg. us-east-1<u>a</u>
-    - it is common to run workloads in at least 3 AZs in case any datacenter fails. <u> (High Availability)</u>
-    - All AZs in a AWS Region are interconnected with 
-        - high bandwidth
-        - low-latency networking
-        - over fully reduntant
-        - dedicated mertro fiber providing high throughput
-        - low - latency networking between them
-- <b>Datacenter </b> is a secured building contains hundreds of thousands of computers
-    - A region will ${\color{yellow}*generally}$ contain <u> 3 Availability zones</u>
-- Availability zones are redundantly connected to multiple tier 1 transit providers
-![AZs connection ](../images/cloud-computing-images-ppt/AZ-connection.png)
-
-## Global Infrastructure Regional vs Global
----
-
-| **Regional Services**                                                             | **Global Services**                                                |
-| --------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-|  AWS ${\color{red}scopes}$ their AWS management console on selected region        | Some AWS services operate across multiple regions                  |
-| determines where AWS service will be launched and what will be seen in the console | E.g. S3, CloudFront, Route53, IAM, AWS                             |
-
-- Global services at the time of creation:
-    - no concept of region eg. IAM user
-    - single region explicitly chosen eg. S# Bucket
-    - A group of regions are chosen eg. CloudFront Distribution
+- [For more information...](../global_infrastructure/global_infrastructure.md)
 
 ## Seven advantages to cloud
 ---
@@ -148,7 +122,7 @@
     - no up-front cost
     - on-demand pricing or Pay-as-you-go (PAYG) with thousands of customers sharing the cost of resources
 - <b> Global </b>
-    - Launch workloads <i> ${\color{yellow}anywhere}$ in the world</i>
+    - Launch workloads <i> anywhere in the world</i>
 - <b>Secure</b>
     - Cloud providers takes care of physical security
     - <i>cloud services can be secure by default</i>
