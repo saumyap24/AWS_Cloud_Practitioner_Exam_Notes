@@ -101,10 +101,10 @@
     ---
 
     - CDK piplines to quickly setup CI/CD pipelines fro CDK projects 
-    - Has testing framework for for Unit and Integration Testing
+    - Has testing framework for Unit and Integration Testing
     - helps to expedite new projects
     - CDK is powered by CoudFormation
-    - Har large library of resuable cloud components called CDK Construct <l> https://constructs.dev </l>
+    - Has large library of resuable cloud components called CDK Construct <l> https://constructs.dev </l>
 
     <img src="../images/management_and_development/CDK.png" width="60%"/>
     

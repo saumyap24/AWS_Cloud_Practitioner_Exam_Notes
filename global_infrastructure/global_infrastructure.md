@@ -49,9 +49,9 @@
 ## Global Infrastructure Regional vs Global
 ---
 
-| **Regional Services**                                                             | **Global Services**                                                |
-| --------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-|  AWS ${\color{red}scopes}$ their AWS management console on selected region        | Some AWS services operate across multiple regions                  |
+| **Regional Services**                                                              | **Global Services**                                                |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+|  AWS ${\color{red}scopes}$ their AWS management console on selected region         | Some AWS services operate across multiple regions                  |
 | determines where AWS service will be launched and what will be seen in the console | E.g. S3, CloudFront, Route53, IAM, AWS                             |
 
 - Global services at the time of creation:
@@ -65,7 +65,7 @@
 - ### What is fault domain ?
     - A section of a network that is <i>vulnerable to damage if a critical device or system fails </i>
     - Purpose: if failure occurs it will not cascade outside that domain, <u> <i> limiting the damage possible</i></u>
-        <img src="../images/global_infrastructure/fault_domain_meme.png" width="40%"/>
+        <img src="../images/global_infrastructure/fault_domain_meme.png" width="30%"/>
     - <b> What is fault level?</b>
         - a collection of fault domains
     - Scope of fault domain could be:
