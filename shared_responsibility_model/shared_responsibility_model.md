@@ -1,6 +1,9 @@
 - [Shared Responsibility Model](#shared-responsibility-model)
 - [Types of Cloud Computing Responsibility](#types-of-cloud-computing-responsibility)
 - [Shared Responsibility for Compute](#shared-responsibility-for-compute)
+- [Shared Responsibility Model Alternate](#shared-responsibility-model-alternate)
+- [Shared Responsibility Model - Architecture](#shared-responsibility-model-architecture)
+
 
 ## Shared Responsibility Model
 --- 
@@ -77,3 +80,22 @@
             - Deployment, Container Runtime, Networking, Storage, Security, Physical Machine, (basically evrything)
 
     <img src="../images/shared_responsibility_model/shared_responsibility_model_compute.png" width="60%" />
+
+## Shared Responsibility Model Alternate
+--- 
+
+- Customer is responsible for:
+    - data 
+    - configuration of access controls that is in AWS
+    - configuration of cloud services
+    - granting access to users via permissions
+- CSP is responsible for:
+    - underlying infrastructure
+
+<img src="../images/shared_responsibility_model/shared_responsibility_model_alternate.png" width="45%" />
+
+## Shared Responsibility Model Architecture
+---
+
+<img src="../images/shared_responsibility_model/shared_responsibility_model_architecture.png" width="60%" />
+
