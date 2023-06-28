@@ -13,7 +13,7 @@
     - [AWS wavelength zones](#aws-wavelength-zones)
     - [Data Residency](#data-residency)
     - [AWS for Government](#aws-for-government)
-        - [GocCloud](#GovCloud)
+        - [GovCloud](#govcloud)
     - [Sustainability](#sustainability)
     - [AWS Ground Station](#AWS-Ground-Station)
     - [AWS OutPosts](#Aws-outposts)

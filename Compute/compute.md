@@ -1,6 +1,7 @@
 - [EC2 Overview](#ec2-overview)
 - [VMs, Containers, Serverless](#vms-containers-serverless)
 - [High Performance Computing (HPC)](#high-performance-computing)
+- [Edge and Hybrid](#edge-and-hybrid)
 
 ## EC2 Overview
 ---
@@ -65,7 +66,7 @@
 --- 
 
 - <b> The Nitro System </b>
-    - Combination of <i> dedicated hardware and lightweight hypervisors</i> enabling faster innovation and enhanced security. 
+    - Combination of <i> dedicated hardware and lightweight hypervisor</i> enabling faster innovation and enhanced security. 
     - All new EC2 instance types use the Nitro System
         - Nitro Cards :-  Specialized cards for VPC, EBS and Instance Storage and Controller Card
         - Nitro Security Chips :- Integrated into motherboard. Protects hardware resources.
@@ -78,7 +79,32 @@
         - A Linux based open source built for running containers on VM or Bare metal hosts 
     - <b> What is High Performance Computing (HPC)? </b>
         - A cluster of hundreds of thousands of servers with fast connections between each of them with the purpose of boosting computing capacity.
-        - When you need a SuperComputer 
+        - When you need a SuperComputer to perform computational problems too large to run on a standard computers or would take long
+            - <b> AWS ParallelCluster </b> - <i>AWS-supported open source cluster management tool </i> that makes it easy to deploy and manage High Performance Computing (HPC) clusters on AWS.
+ 
+## Edge and Hybrid 
+---
+
+ - <b> What is Edge Computing? </b>
+    - Pushing comuting workloads outside of your networks run close to destination locations
+    - eg. Pushing computing to run on Phones, IOT devices or external servers not within your cloud network.
+
+- <b> What is Hybrid Computing? </b>
+    - Able to run workloads on both on-premise datacenter and AWS VPC (virtual private cloud)
+        - <b> AWS OutPosts </b> 
+            - Physical rack of servers 
+            - Allows to use AWS API and services such as EC2 right in your datacenter
+        - <b> AWS Wavelength </b>
+            - Allows <i> to build and launch your application in a telecomm datacenter </i> 
+            - By doing this applications have ultra-low latency since they will be pushed over a 5G Network and be closest as possible to end user 
+            - eg. Verizon, Vodafone
+        - <b> VMWare Cloud on AWS </b>
+            - Allows to <i> manage on-premise virtual machines using VMWare <i> as EC2 instances.
+            - The datacenter must be using VMWare for Virtualization 
+            - eg. VMWare Sphere
+        - <b> AWS Local Zones </b>
+            - <i> Edge datacenter located outside of AWS region </i> so you can use AWS closer to end destinations
+            - When you need faster computing, storage and databases in populated areas that are outside of an AWS region
 
 
 
