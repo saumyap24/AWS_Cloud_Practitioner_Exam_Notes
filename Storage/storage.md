@@ -41,12 +41,7 @@
 | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | - Obejcts contain data(files)                                                   | - Buckets hold objects                                                  |
 | - They are like files                                                           | - Buckets can have folders which can turn in hold objects               |
-| - Object may consists of:                                                       | - S3 is universal namespace so domain names must be <u> Unique </u>     | 
-    - <b> Key </b> this is the name of the object                          
-    - <b> Value </b> data iteself is made up of sequence of bytes          
-    - <b> Version Id </b> version of object (when versioning is enabled)  
-    - <b> Metadata </b> additional information attached to the object                                                                                      
-|                                                                                 |                                                                         |
+| - Object may consists of: - </br> - <b> Key </b> this is the name of the object </br> - <b> Value </b> data iteself is made up of sequence of bytes   <br>- <b> Version Id </b> version of object (when versioning is enabled) <br> - <b> Metadata </b> additional information attached to the object                                               | - S3 is universal namespace so domain names must be <u> Unique </u>      | 
 
 ---
 ## S3 Storage Classes 
