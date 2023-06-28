@@ -14,4 +14,5 @@ Created this notes while I was preparing for my cloud practitioner exam. Hope th
 - [Management and Development Tools](./management_and_development_tools/management_and_development_tools.md)
 - [Shared Responsibility Model](./shared_responsibility_model/shared_responsibility_model)
 - [Compute](./Compute/compute.md)
+- [Storage](./Storage/storage.md)
 

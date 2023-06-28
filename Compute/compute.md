@@ -2,6 +2,9 @@
 - [VMs, Containers, Serverless](#vms-containers-serverless)
 - [High Performance Computing (HPC)](#high-performance-computing)
 - [Edge and Hybrid](#edge-and-hybrid)
+    - [What is Edge Computing ?](#what-is-edge-computing)
+- [Cost & Capacity Managemnet](#cost-and-capacity-managemnet)
+---
 
 ## EC2 Overview
 ---
@@ -20,7 +23,7 @@
     - Operating System
     - attach multiple hard drives for storage eg. Elastic Block Store (EBS)
 - EC2 is considered as the <i> backbone of AWS </i> because majority of AWS services are using EC2 as their underlying servers. eg. S3, RDS, DynamoDB,Lambdas
-
+---
 ## VMs, Containers, Serverless
 ---
 
@@ -61,7 +64,7 @@
         - <I> Can run Code </i> without provisioning or managing severs
         - Upload small pieces of Code, Choose much memory and how long function is allowed to run before timing out
         - Charged based on the runtime of the serverless function rounded to the nearest 100ms.
-
+---
 ## High Performance Computing (HPC)
 --- 
 
@@ -81,11 +84,11 @@
         - A cluster of hundreds of thousands of servers with fast connections between each of them with the purpose of boosting computing capacity.
         - When you need a SuperComputer to perform computational problems too large to run on a standard computers or would take long
             - <b> AWS ParallelCluster </b> - <i>AWS-supported open source cluster management tool </i> that makes it easy to deploy and manage High Performance Computing (HPC) clusters on AWS.
- 
+---
 ## Edge and Hybrid 
 ---
 
- - <b> What is Edge Computing? </b>
+ - ### <b> What is Edge Computing ? </b>
     - Pushing comuting workloads outside of your networks run close to destination locations
     - eg. Pushing computing to run on Phones, IOT devices or external servers not within your cloud network.
 
@@ -99,12 +102,39 @@
             - By doing this applications have ultra-low latency since they will be pushed over a 5G Network and be closest as possible to end user 
             - eg. Verizon, Vodafone
         - <b> VMWare Cloud on AWS </b>
-            - Allows to <i> manage on-premise virtual machines using VMWare <i> as EC2 instances.
+            - Allows to <i> manage on-premise virtual machines using VMWare </i> as EC2 instances.
             - The datacenter must be using VMWare for Virtualization 
             - eg. VMWare Sphere
         - <b> AWS Local Zones </b>
             - <i> Edge datacenter located outside of AWS region </i> so you can use AWS closer to end destinations
             - When you need faster computing, storage and databases in populated areas that are outside of an AWS region
+---
+## Cost and Capacity Management
+---
+
+- <b> EC2 Spot Instances, Reserved Instanced and Savings Plan </b>
+    - Ways to save on computing
+        - by paying full or partially , 
+        - (or) by commiting to a yearly contracts 
+        - (or) by being flexible about availability and interrruption of computing service
+- <b> AWS Batch </b>
+    - Plans , Schedules, and <u> executes batch computing workloads </u> accross the full range of AWS compute services, can utilize Spot Instance to save money
+
+- <b> AWS Compute Optimizer </b>
+    - suggests how to <i><u> reduce costs and improve performance </U></i> by using machine learning to analyze you previous usage history
+
+- <b> EC2 Autoscaling Groups (ASGs) </b>
+    - <u> Automatically adds or remove EC2 servers </u> to meet the current demand of traffic.
+    - Will save money and meet capacity since you only run the amount of servers you need
+
+- <b> Elastic Load Balancer (ELB) </b>
+    - Distributes traffic to multiple instance, can re-route traffic from <u> unhealthy instance to healthy instances</u>.
+    - Can route traffic to EC2 instances running in different Availability Zones
+
+- <b> AWS Elastic Beanstalk (ELB) </b>
+    - <u> Easily deploys web applications</u> without developers worrying about setting up and understanding the underlying AWS Services
+    - eg. Heroku
+
 
 
 
