@@ -1,5 +1,6 @@
 - [Types of Storage Services](#types-of-storage-services)
 - [Introduction to S3](#introduction-to-s3)
+- [S3 Storage Classes](#s3-storage-classes)
 
 ---
 ## Types of Storage Services
@@ -34,13 +35,20 @@
         - S3 provides with <u> Unlimited storage </u>
         - Need not think about underlying infrastructure
         - S3 console provides an interface for you to upload and access your data 
+        - Individual Object can be store form <u> 0 Bytes to 5 Terabytes </u> in size
 
-| **S3 Object**                                                           | **S3 Bucket**                                                           |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| - Obejcts contain data(files)                                           | - Buckets hold objects                                                  |
-| - Object may consists of:                                               | - Buckets can have folders which can turn in hold objects               | 
-|   - <b> Key </b> this is the name of the object                         | - S3 is universal namespace so domain names must be <u> Unique </u>     | 
-|   - <b> Value </b> data iteself is made up of sequence of bytes         |
-|   - <b> Version Id </b> version of object (when versioning is enabled)  |
-|   - <b> Metadata </b> additional information attached to the object     | 
+| **S3 Object**                                                                   | **S3 Bucket**                                                           |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| - Obejcts contain data(files)                                                   | - Buckets hold objects                                                  |
+| - They are like files                                                           | - Buckets can have folders which can turn in hold objects               |
+| - Object may consists of:                                                       | - S3 is universal namespace so domain names must be <u> Unique </u>     | 
+    - <b> Key </b> this is the name of the object                          
+    - <b> Value </b> data iteself is made up of sequence of bytes          
+    - <b> Version Id </b> version of object (when versioning is enabled)  
+    - <b> Metadata </b> additional information attached to the object                                                                                      
+|                                                                                 |                                                                         |
+
+---
+## S3 Storage Classes 
+--- 
 
