@@ -2,6 +2,7 @@
 - [Introduction to S3](#introduction-to-s3)
 - [S3 Storage Classes](#s3-storage-classes)
 - [AWS Snow Family](#aws-snow-family)
+- [Storage Services](#storage-services)
 
 ---
 ## Types of Storage Services
@@ -92,4 +93,59 @@
 ---
 
 - AWS Snow Family are <u> Storage and compute devices used to physically move data in or out the cloud </u> when moving data over the internet or private connection it to slow, difficult or costly
+
+ ![Snow family](../images/Storage/snow_family.png)
+
+ ---
+ ## Storage Services 
+ ---
+
+- <b> Simple Storage Service (S3)</b>
+    - A <u> serverless object storage service </u> is created   
+    - can upload very large files and unlimited amount of files 
+    - you pay for what you store
+    - Need not worry about the underlying file-system or upgrading the disk size
+
+- <b> S3 Glacier </b>
+    - Cold storage service
+    - <u> low cost storage solution </u> for <i> archiving and long-term backup </i>
+    - Uses previous generation HDD drives to get that low cost
+    - highly secure and durable
+
+- <b> Elastic Block Store (EBS) </b>
+    - <u> a persistent block storage service </u>
+    - virtual hard drive in the cloud to attach to EC2 instances 
+    - can choose different kinds of storage: SSD, IOPS, SSD, Throughput HHD, Cold HHD
+
+- <b> Elastic File Storage (EFS) </b>
+    - <u> a cloud-native NFS file system service </u>
+    - File storage you can mount to multiple Ec2 instances at the same time
+    - When you need to share files between multiple EC2 instances
+
+- <b> Storage Gateway </b>
+    - <u> a hybrid cloud storage </u> service that extends your on-premise storage to cloud
+        - <b> File Gateway </b> : extends your local storage to AWS S3
+        - <b> Volume Gateway </b> : caches your local drives to S3 so you have continous backup of files on cloud
+        - <b> Tape Gateway </b> : stores files on virtual tapes for very cost effective and long term storage
+     
+- <b> AWS Snow Family </b>
+    - Storage devices used to physically migrate large amounts of data
+    - <b> Snowball  and Snowball Edge </b> {Snowball does not exist anymore} briefcase size of data storage devices. 50-80 Terabytes
+    - <b> Snowmobile </b> Cargo container filled with racks of storage and compute that is transported via semi-trailer tractor truck to transfer upto 100PB of data per trailer
+    - <b> Snowcone </b> very small version of snowball that can transfer 8TB of data
+
+- <b> AWS BAckup </b>
+    - a <u> fully managed backup service </u>
+    - centralize and automate the backup of the backup data across multiple AWS services 
+    - eg. EC2, EBS, RDS, DynamoDB, EFS, Storage Gateway
+    - can create backup plans
+
+- <b> Cloud Endure Disaster Recovery </b>
+    - Continously replicates your machines into low cost staging area in your target AWS account and preferred region enabling fast and reliable recovery if one of the data center fails
+
+- <b> Amazon FSx </b>
+    - <u>a feature rich and highly-performant file system</u>
+    - Can be used for Windows (SMB) or Linux (Lustre)
+        - <b> Amazon Fsx for Window File Server </b> uses the SMB protocol to and allows you to mount FSx to windows servers
+        - <b> Amazon FSx for Lustre </b> uses Linux's Lustre file systems and allows you to mount FSx to Linux servers 
 
