@@ -2,7 +2,7 @@
 Created this notes while I was preparing for my cloud practitioner exam. Hope this helps someone else too.
 
 # Begniner 
-- would take atleast 30 hours to completer on the average of 24 hrs study time which includes 50% lecture and labs time and 50% practice exams
+- would take atleast 30 hours to complete on the average of 24 hrs study time which includes 50% lecture and labs time and 50% practice exams
 # Experienced 
 - would take 6 hours to complete who have practical expereince working with AWS and strong backgorund in technology
 
@@ -15,4 +15,4 @@ Created this notes while I was preparing for my cloud practitioner exam. Hope th
 - [Shared Responsibility Model](./shared_responsibility_model/shared_responsibility_model)
 - [Compute](./Compute/compute.md)
 - [Storage](./Storage/storage.md)
-
+- [Database](./Database/database.md)
