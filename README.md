@@ -18,3 +18,4 @@ Created this notes while I was preparing for my cloud practitioner exam. Hope th
 - [Database](./Database/database.md)
 - [Networking](./Networking/networking.md)
 - [EC2](./EC2/ec2.md)
+- [EC@ Pricing Models](./EC2_pricing_models/ec2_pricing_models)
