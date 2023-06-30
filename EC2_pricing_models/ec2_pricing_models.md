@@ -65,8 +65,8 @@
 ---
 ## Regional and Zonal RI
 ---
-| Regional RI : purchase for a region                         | Zonal RI : purchase for an Availability Zone              |
-| ----------------------------------------------------------- | --------------------------------------------------------- |
+| Regional RI : purchase for a region                         | Zonal RI : purchase for an Availability Zone                                       |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | does not reserve capacity | reserves capacity in the specified Availibility Zone |
 | RI discount applies to instance usage in <u> any AZ</u> in the Region | RI discount applies to instance in the <u> selected AZ </u> (No AZ Flexibility) |
 | Ri discount applied to instance usage within the instance family, regardless of size. Only supported n Amazon Linux, Unix Reserved Instances with default tenancy | No instance size flexibility </br>  Ri discounts applies to instance usage for the specified instance type and size only </br>  |
