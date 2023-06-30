@@ -16,3 +16,5 @@ Created this notes while I was preparing for my cloud practitioner exam. Hope th
 - [Compute](./Compute/compute.md)
 - [Storage](./Storage/storage.md)
 - [Database](./Database/database.md)
+- [Networking](./Networking/networking.md)
+- [EC2](./EC2/ec2.md)

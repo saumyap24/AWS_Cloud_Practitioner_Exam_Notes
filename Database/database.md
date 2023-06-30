@@ -7,6 +7,7 @@
     - [DocumentDB](#documentdb)
     - [Amazon Keyspaces](#amazon-keyspaces)
 - [Relational Database Service](#relational-database-service)
+- [Other Database Services](#other-database-services)
 ---
 ## What is Database ?
 ---
@@ -78,4 +79,61 @@
 ---
 ## Relational Database Service
 ---
+
+- ### Relational Database Services (RDS)
+    - supports multiple SQL engines
+    - Relational is synonymous with SQL and Online Transactional Processing (OLTP)
+    - most commonly used type of database among tech companies and start ups
+    - RDS supports the following SQL Engines:
+       -  <b>MYSQL </b> - Most popular open source SQL database that was purchased and now owned by Oracle 
+       -  <b> MariaDB </b> - When Oracle bought MYSQL. MariaDB made a fork (copy) of MYSQL was made under a different open-source license
+       - <b> Postgres (PSQL) </b> - Most popular open-source SQL database among developers. Has rich-features over MYSQL but at added complexity
+       - <b> Oracle </b> - Oracle's proprietary SQL database. Well used by Enterprise companies. Have to buy a license to use it
+       - <b> Microsoft SQL Server </b> - Microsoft's proprietary SQL database. Have to buy license to use it
+       - <b> Aurora </b> - Fully managed database 
+            - <b> Aurora </b> 
+                - fully managed database, 
+                - database of either MYSQL (5X faster) and PSQL (3X faster) database
+                - <i> When you want a highly available, durable, scalable and secure relational database for Postgres or MySQL then Aurora is correct fit</i>
+        - <b> Aurora Serverless </b> 
+                - serverless on-demand version of Aurora.
+                - When you want "most" of the benefits of Aurora but can trade to have cold-starts or you don't have lots of traffic demand
+        - <b> RDS on VMware </b>
+                - allows you to deploy RDS supported engines to on-premise data center.
+                - datacenter must be using VMware for server virtualisation
+                - when you want databases maanged by RDS on your own datacenter
+
+---
+## Other Database Services
+---
+- <b> RedShift </b>
+    - <u> petabyte-size data-warehouse </u>
+    - Data warehouses
+        - are for Online Analytical Procesing (OLAP)
+        - can be expensive becuase they are keeping data "hot"
+        - "HOT" means we can run a very complex query and a large amount of data and get that data very fast 
+        - Usage: when you want to quickly generate analytics or reports from a large amount of data 
+- <b> ElasticCache </b>
+    - a managed database of the <u> in-memory and caching open-source databases </u>
+    - Redis or Memcached 
+    - Usage: when you want to improve the performance of application by adding a caching layer in-front of web-server or database
+- <b> Neptune </b>
+    - a managed <u> graph database </u>
+    - Data is represented in interconnected nodes
+    - Usage: when you need to understand the connections between data eg. Mapping Fraud Rings or Social Media Relationships
+- <b> Amazon Timestreams </b>
+    - a fully managed <u>time series database</u>
+    - Related to Devices that send lot of data that are time-sensitive such as IOT devices 
+    - Usage: When you need to measure how things change over time
+- <b> Amazon Quantum Ledger Database </b>
+    - a fully managed <u> ledger database </u> that provides <i> transparent, immutable and cryptographically variable transaction logs </i>
+    - Usage: when you need to record history of financial activities that can be trusted
+- <b> Database Migration Service </b>
+    - a database migration service
+    - Can migrate from:
+        - On-premise database to AWS
+        - from two database in different or same AWS accounts using SQL engines
+        - from a SQL to NOSQL database
+        
+
 
