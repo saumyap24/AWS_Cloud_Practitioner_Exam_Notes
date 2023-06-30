@@ -6,6 +6,7 @@
     - [Accelerated Optimised](#accelerated-optimised)
     - [Storage Optimised](#storage-optimised)
 - [Dedicated Hosts vs Dedicated Instances](#dedicated-hosts-vs-dedicated-instances)
+- [Ec2 Tenancy](#ec2-tenancy)
 ---
 ## EC2 Intsance Families
 --- 
@@ -66,9 +67,16 @@
 |                                                | Dedicated Instance                       | Dedicated Hosts                                                             |
 | ---------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------- |
 | Isolation                                      | Instance Isolation                       | Physical server ISolation                                                   |
-| Biling                                         | Per Instance biling (+$2 per region fee) | per Host biling                                                           |                            
+| Biling                                         | Per Instance biling (+$2 per region fee) | per Host biling   |                            
 | Visibility of Physical characterstics          | No visibilities                          | Sockets, Cores , Host ID                                                    |
 | Affinity between a host and instance           | No Affinity                              | Consistency deploy to the same instances to the same physical server        |
-| targeted instance placement                    | No control                               | Additional control over insatnce placement on physical server               |
+| targeted instance placement                    | No control                               | Additional control over instance placement on physical server               |
 | Automatic instance placement                   | Yes                                      | Yes |
 | Add capacity using an allocation request       | No                                       | Yes |
+
+
+---
+## Ec2 Tenancy
+--- 
+ <img src="../images/EC2/ec2_tenancy.png" width="65%" />
+
