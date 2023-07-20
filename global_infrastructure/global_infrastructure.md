@@ -2,7 +2,7 @@
     - [Global Infrastructure Regional vs Global](#global-infrastructure-regional-vs-global)
     - [Fault Tolerance](#fault-tolerance)
         - [What is fault domain ?](#what-is-fault-domain)
-        - [Amazon regions and availibility zones](#Amazon-regions-and-availibility-zones)
+        - [Amazon regions and availibility zones](#amazon-regions-and-availibility-zones)
     - [AWS Global Network](#aws-global-network)
     - [Points of Presence (PoP)](#points-of-presence)
         - [Tier 1](#tier-1)
@@ -15,8 +15,8 @@
     - [AWS for Government](#aws-for-government)
         - [GovCloud](#govcloud)
     - [Sustainability](#sustainability)
-    - [AWS Ground Station](#AWS-Ground-Station)
-    - [AWS OutPosts](#Aws-outposts)
+    - [AWS Ground Station](#aWS-Ground-Station)
+    - [AWS OutPosts](#aws-outposts)
 
 ## Global Infrastructure
 --- 
@@ -56,7 +56,7 @@
 
 - Global services at the time of creation:
     - no concept of region eg. IAM user
-    - single region explicitly chosen eg. S# Bucket
+    - single region explicitly chosen eg. S3 Bucket
     - A group of regions are chosen eg. CloudFront Distribution
 
 ## Fault Tolerance
@@ -76,14 +76,14 @@
     - (It is up to Cloud Service Providers (CSPs)  to define the boundaries of a domain)
     <img src="../images/global_infrastructure/fault_level_fault_domain.png" width="70%"/>
 
-- ### Amazon regions and availibility zones
-    - Each Amazon region is completely <i>isolated</i> from the other Amazon regions
+- ### Amazon regions and availability zones
+    - Each Amazon region is completely <i><u>isolated</u></i> from the other Amazon regions
         - Achieves <b><i><u>greatest possible fault tolerance and stability</u></b></i>
-    - Each availability zone is <i>isolated</i> but AZs are connected in a Region through <i>low-latency links</i>
+    - Each availability zone is <i><u> isolated</u></i> but AZs are connected in a Region through <i>low-latency links</i>
         - Each availability zone is designed as <b><i><u>indenpendent failure zone</i></b></u> <i>{Failure zone is Fault Domain}</i>
         - <b> Failure Zone</b> 
             - Availibility zones are physically separated by metropolitan region and are located in low flood zones
-            - Uninterruptible power supply (UPS) and onsite genration facilities
+            - Uninterruptible power supply (UPS) and onsite generation facilities
             - data centers located in different AZ are designed to be supplied by independent substations to reduce the risk of an event on the power grid impacting more than one availability zone
             - All AZs are redundantly connected to multiple tier-1 transit providers
         - <b> Multi-AZ for High Availability </b>
@@ -92,8 +92,8 @@
 
 ## AWS Global Network
 ---
-- represents <b><i><u>interconnections between AWS Global Infrastructure</u></i></b>
-- reffered as <i>"The backbone of AWS"</i>
+- represents <b><i><u>inter connections between AWS Global Infrastructure</u></i></b>
+- refered as <i>"The backbone of AWS"</i>
 - a private expressway - where things can move very fast between datacenters
     - <b>Edge locations: </b> 
         - to get data in and out of AWS very quickly
@@ -169,7 +169,7 @@
     - It is a logical extension of the US-West Region
     - Identifier looks like: <b> us-west-2-lax-1a</b>
 - Only specific AWS Services have been made available
-    - EC2 instance types (T3,C5,R5,R5d,I3en,G4)
+    - EC2 instance types (T3, C5, R5, R5d, I3en, G4)
     - EBS
     - Amazon Fsx
     - Application Load Balancer
@@ -186,7 +186,7 @@
 - <b>AWS Wavelength Zones</b> allows for <i><u>edge-computing on 5G Networks</u></i>
 - Applications have <i><u> ultra-low latency </u></i> being close to users
 - AWS partnered with Telecom companies to utilize 5G networks. (e.g. Verizon, Vodafone, SK telecom)
-- create a Subnet tied to a wavelength zone and then you can launch virtual machines (VMs) to the edge of the targeted 5G Networks
+- Create a Subnet tied to a wavelength zone and then you can launch virtual machines (VMs) to the edge of the targeted 5G Networks
  
 ## Data Residency
 ---
@@ -200,9 +200,9 @@
 - For workloads that need to meet compliance boundaries:
     - <b>AWS outposts</b> is physical rack of servers that you can put in your data center. Your data will reside wherever outpost physically resides
     - <b>AWS config</b> is a Policy code service
-        - You can create rules to conitnous check AWS resources configuration
+        - You can create rules to continous check AWS resources configuration
         - If they deviate you can add check to be alerted or to auto remediate
-    - <b>IAM Policies</b> can be written explicitly deny access to apecific AWS Regions
+    - <b>IAM Policies</b> can be written explicitly deny access to specific AWS Regions
         - A <b> Service Control Policy</b> are permissions applied organisation wide
 
 ## AWS for Government
@@ -232,7 +232,7 @@
 ---
 
 - Goals:
-    1. Renewable ENergy : 
+    1. Renewable Energy : 
         - planning to be 100% renewable energy by 2025
         - purchases and retires environamental attributes to cover non-renewable energy 
             - Renewable Energy Credits (RECs)
@@ -255,7 +255,7 @@
     - communications
     - video boradcasts
 - To use the ground station:
-    - schedule a contract (select satelite, start and end time and the gorund location )
+    - schedule a contract (select satelite, start and end time and the gorund location)
     - Use the AWS ground station EC2 AMI to launch EC2 instances that will uplink and downlink data during the contact or recieve downlinked data in Amazon S3 bucket
 
 

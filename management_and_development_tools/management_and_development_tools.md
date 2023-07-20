@@ -87,7 +87,7 @@
     --- 
 
     - Allows to write IaC as JSON or YAML file
-    - Easier for DevOps ENgineers who do not have a background in web programming languages
+    - Easier for DevOps Engineers who do not have a background in web programming languages
     - simple but lead to large files or limited to creating dynamic or repeatable infrastructure compared to CDK
     - helps to model and steup AWS resources so that we can focus more on application and less time managing the resources 
     - Using Cloud Formation create a template what resources are needed (like Amazon Ec2 or Amazon RDS DB instances)

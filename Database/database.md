@@ -11,7 +11,7 @@
 ---
 ## What is Database ?
 ---
-- <i> A database is data-store that store semi=structured and structured data</i>
+- <i> A database is data-store that store semi-structured and structured data</i>
 - A database is more complex stores because it requires using formal design and modeling techniques
 - Database types:
     - <b> Relational Database </b>
@@ -63,8 +63,8 @@
 ---- 
 - ### DynamoDB
     - a serverless <u> NOSQL key/Value and document database</u>
-    - designed to scale to billions of records  with consistent data return in at least a second
-    - It is AWS's <u> flagship datbase service </U> meaning it is cost-effective and very fast 
+    - designed to scale to billions of records  with consistent data return in at <u>least a second</u>
+    - It is AWS's <u> flagship database service </U> meaning it is cost-effective and very fast 
     - In 2019, Amazon shutdown their last Oracle database and completed their migration to DynamoDB. They had 7,500 Oracle databases and 75 perabytes of data. With DynamoDB they reduce costs by 60% and reduce latency by 40%
     - It is a <u>massively scalable database </u>
 - ### DocumentDB
@@ -93,7 +93,7 @@
        - <b> Aurora </b> - Fully managed database 
             - <b> Aurora </b> 
                 - fully managed database, 
-                - database of either MYSQL (5X faster) and PSQL (3X faster) database
+                - database of either <u>MYSQL (5X faster) and PSQL (3X faster) database </u>
                 - <i> When you want a highly available, durable, scalable and secure relational database for Postgres or MySQL then Aurora is correct fit</i>
         - <b> Aurora Serverless </b> 
                 - serverless on-demand version of Aurora.
@@ -109,14 +109,14 @@
 - <b> RedShift </b>
     - <u> petabyte-size data-warehouse </u>
     - Data warehouses
-        - are for Online Analytical Procesing (OLAP)
-        - can be expensive becuase they are keeping data "hot"
+        - are for <u>Online Analytical Procesing (OLAP)</u>
+        - can be expensive because they are keeping data "hot"
         - "HOT" means we can run a very complex query and a large amount of data and get that data very fast 
         - Usage: when you want to quickly generate analytics or reports from a large amount of data 
 - <b> ElasticCache </b>
     - a managed database of the <u> in-memory and caching open-source databases </u>
     - Redis or Memcached 
-    - Usage: when you want to improve the performance of application by adding a caching layer in-front of web-server or database
+    - Usage: when you want to <u> improve the performance of application </u> by adding a caching layer in-front of web-server or database
 - <b> Neptune </b>
     - a managed <u> graph database </u>
     - Data is represented in interconnected nodes
@@ -134,6 +134,6 @@
         - On-premise database to AWS
         - from two database in different or same AWS accounts using SQL engines
         - from a SQL to NOSQL database
-        
+
 
 

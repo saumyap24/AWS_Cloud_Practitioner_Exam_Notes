@@ -50,7 +50,7 @@
         - Amazon workspaces 
 - <b> PAAS </b>
     - hides the complexity of the infrastructure that runs it
-    - often includes code that will the run the application 
+    - often includes code that will run the application 
     - AWS PAAS products
         - Elastic Beanstalk
         - Elastic container service (ECS)

@@ -66,12 +66,12 @@
     - Replicated accross at least thress AZs
 
 - <b> S3 Intelleigent Tiering </b>
-    - Uses ML to analyze object usage and determine the approprate storage class
+    - Uses ML to analyze object usage and determine the appropriate storage class
     - Data is moved to most cost-effective tier without any performance impact or added overhead
 
 - <b> S3 Standard-IA (Infrequent Access) </b>
     - Still Fast! Cheaper if you access files less than once a month
-    - Additional retrieval fee is applied. 50% less than standard (reduced availability)
+    - <u> Additional retrieval fee is applied</u>. 50% less than standard (reduced availability)
 
 - <b> S3 One-Zone-IA </b>
     - Still fast! Objects only exist in one AZ. 

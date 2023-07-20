@@ -66,7 +66,7 @@
 
 |                                                | Dedicated Instance                       | Dedicated Hosts                                                             |
 | ---------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------- |
-| Isolation                                      | Instance Isolation                       | Physical server ISolation                                                   |
+| Isolation                                      | Instance Isolation                       | Physical server Isolation                                                   |
 | Biling                                         | Per Instance biling (+$2 per region fee) | per Host biling   |                            
 | Visibility of Physical characterstics          | No visibilities                          | Sockets, Cores , Host ID                                                    |
 | Affinity between a host and instance           | No Affinity                              | Consistency deploy to the same instances to the same physical server        |

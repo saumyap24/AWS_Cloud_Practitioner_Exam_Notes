@@ -6,6 +6,7 @@
         - [Payment Options](#payment-options)
     - [Reserved Instance Attributes](#reserved-instance-attributes)
     - [Regional and Zonal RI](#regional-and-zonal-ri)
+    - [RI Limits](#ri-limits)
 
 ---
 ## EC2 Pricing Models
@@ -71,3 +72,7 @@
 | RI discount applies to instance usage in <u> any AZ</u> in the Region | RI discount applies to instance in the <u> selected AZ </u> (No AZ Flexibility) |
 | Ri discount applied to instance usage within the instance family, regardless of size. Only supported n Amazon Linux, Unix Reserved Instances with default tenancy | No instance size flexibility </br>  Ri discounts applies to instance usage for the specified instance type and size only </br>  |
 | You can queue purchases for regional RI  | You can't queue purchases for Zonal RI | 
+
+--- 
+## RI limits
+--- 
