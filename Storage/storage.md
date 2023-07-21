@@ -79,7 +79,7 @@
 
 - <b> S3 Glacier </b>
     - For long term cold storage
-    - Retrieval of data can take minutes to hours but the off is ver cheap storage
+    - Retrieval of data can take minutes to hours but the off is very cheap storage
 
 - <b> S3 Glacier Deep Archive </b>
     - The lowest cost storage class
