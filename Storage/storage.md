@@ -134,7 +134,7 @@
     - <b> Snowmobile </b> Cargo container filled with racks of storage and compute that is transported via semi-trailer tractor truck to transfer upto 100PB of data per trailer
     - <b> Snowcone </b> very small version of snowball that can transfer 8TB of data
 
-- <b> AWS BAckup </b>
+- <b> AWS Backup </b>
     - a <u> fully managed backup service </u>
     - centralize and automate the backup of the backup data across multiple AWS services 
     - eg. EC2, EBS, RDS, DynamoDB, EFS, Storage Gateway

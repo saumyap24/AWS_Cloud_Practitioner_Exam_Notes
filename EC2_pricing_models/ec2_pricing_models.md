@@ -7,6 +7,8 @@
     - [Reserved Instance Attributes](#reserved-instance-attributes)
     - [Regional and Zonal RI](#regional-and-zonal-ri)
     - [RI Limits](#ri-limits)
+    - [Capacity Reservations](#capacity-reservations)
+
 
 ---
 ## EC2 Pricing Models
@@ -73,6 +75,22 @@
 | Ri discount applied to instance usage within the instance family, regardless of size. Only supported n Amazon Linux, Unix Reserved Instances with default tenancy | No instance size flexibility </br>  Ri discounts applies to instance usage for the specified instance type and size only </br>  |
 | You can queue purchases for regional RI  | You can't queue purchases for Zonal RI | 
 
---- 
-## RI limits
---- 
+---
+## RI Limits 
+---
+- There is a limit to the number of Reserved Instances that you can purchase per month
+    - Per month you can purchase
+        - 20 Regional Reserved Instances per Region
+        - 20 Zonal Reserved Instances per AZ
+
+| Regional Limits | Zonal Limits | 
+| --------------- | ------------ |
+| You cannot exceed your running On-Demand Instance limit by purchasing regional Reserved Instances. The default On-Demand Instance limit is 20.  | You can exceed your running On-Demand Instance limit by purchasing zonal Reserved Instances| 
+| Before purchasing RI ensure On-Demand limit is euqal to or greater than your RI you intend to purchase | If you already have 20 running On-Demand Instances, and you purchase 20 Zonal Reserved Instances, you can launch a further 20 On-Demand Instances that match the specifications of your zonal Reserved Instances |
+
+---
+## Capacity Reservations 
+---
+- EC2 instances are backed by different kind of hardware, and so there is a finite amount of servers available within an Availability Zone per instance type or family 
+- You go to launch a specific type of EC2 instance but AWS has ran out of that server
+- Capacity reservation is a service of EC2 that allows you to request a reserve of EC2 instance type for a specific Region and AZ
