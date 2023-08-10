@@ -61,11 +61,11 @@
 <p float="right">
 
 - <b> S3 Standard (default) </b>
-    - Fast! 99.99 % Availibility, 
+    - Fast! 99.99 % Availability, 
     - 11 9's Durability. 
-    - Replicated accross at least thress AZs
+    - Replicated across at least three AZs
 
-- <b> S3 Intelleigent Tiering </b>
+- <b> S3 Intelligent Tiering </b>
     - Uses ML to analyze object usage and determine the appropriate storage class
     - Data is moved to most cost-effective tier without any performance impact or added overhead
 
@@ -119,7 +119,7 @@
 
 - <b> Elastic File Storage (EFS) </b>
     - <u> a cloud-native NFS file system service </u>
-    - File storage you can mount to multiple Ec2 instances at the same time
+    - File storage you can mount to <u> multiple Ec2 instances at the same time</u>
     - When you need to share files between multiple EC2 instances
 
 - <b> Storage Gateway </b>
@@ -141,7 +141,7 @@
     - can create backup plans
 
 - <b> Cloud Endure Disaster Recovery </b>
-    - Continously replicates your machines into low cost staging area in your target AWS account and preferred region enabling fast and reliable recovery if one of the data center fails
+    - Continuously replicates your machines into low cost staging area in your target AWS account and preferred region enabling fast and reliable recovery if one of the data center fails
 
 - <b> Amazon FSx </b>
     - <u>a feature rich and highly-performant file system</u>
