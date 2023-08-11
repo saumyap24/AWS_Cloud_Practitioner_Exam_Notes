@@ -93,14 +93,14 @@
 ## AWS Global Network
 ---
 - represents <b><i><u>inter connections between AWS Global Infrastructure</u></i></b>
-- refered as <i>"The backbone of AWS"</i>
+- referred as <i>"The backbone of AWS"</i>
 - a private expressway - where things can move very fast between datacenters
     - <b>Edge locations: </b> 
         - to get data in and out of AWS very quickly
         - acts as <u><i>on and off ramps</i></u> to AWS Global Network
     - <b>AWS Global <u>Accelerator</u> and AWS S3 Transfer <u>Acceleration </u> </b>
-        - Use <i>"Edge locations"</i> as <u>on-ramp</u> to <u>quickly</u> reach AWS resouces in other regions by traversing the fast AWS Global Network
-    - <b> Amzon CloudFront (CDN)</b>
+        - Use <i>"Edge locations"</i> as <u>on-ramp</u> to <u>quickly</u> reach AWS resources in other regions by traversing the fast AWS Global Network
+    - <b> Amazon CloudFront (CDN)</b>
         - Use <i>"Edge locations"</i> as <u>off-ramp</u> to provide at the Edge storage and compute near the end user
 - <b> VPC Endpoints </b>
     - <i>Ensures resources stay within the AWS Network</i> and do not traverse over Public Network
@@ -110,7 +110,7 @@
 - intermediate location between AWS region and end user 
 - this could be datcenter or collection of hardware
     - For AWS a PoP is
-        - a data center owned by <i> <u>AWS or a tursted partner</u></i> that is utilised by AWS services related for <i> content delivery or expedited upload</i>
+        - a data center owned by <i> <u>AWS or a trusted partner</u></i> that is utilized by AWS services related for <i> content delivery or expedited upload</i>
 - Pop Resources:
     - Edge locations 
         - are datacenters that hold  cached (copy) on the <u><i>most popular files</i></u> 
@@ -177,7 +177,7 @@
 -<i> Purpose:</i>
     - support highly-demanding applications sensitive to latencies
         - Media & Entertainment
-        - Electronic Deisgn AUtomation
+        - Electronic Design Automation
         - Ad-Tech
         - Machine Learning
 
@@ -192,18 +192,18 @@
 ---
 
 - <b> What is Data Residency?</b>
-    - <i> The physical or geographical location of where an organisation or cloud resources reside</i>
+    - <i> The physical or geographical location of where an organization or cloud resources reside</i>
 - <b> What is compliance Boundaries?</b>
-    - <i> A regulatory compliance (legal requirement) by a government or organisation where data and cloud resources are allowed to reside </i>
+    - <i> A regulatory compliance (legal requirement) by a government or organization where data and cloud resources are allowed to reside </i>
 - <b> What is Data Sovereignty?</b>
     - <i>It is jurisdictional control or legal authority that can be used over data because it's physical location is within jurisdictional boundaries.</i>
 - For workloads that need to meet compliance boundaries:
     - <b>AWS outposts</b> is physical rack of servers that you can put in your data center. Your data will reside wherever outpost physically resides
     - <b>AWS config</b> is a Policy code service
-        - You can create rules to continous check AWS resources configuration
+        - You can create rules to continuous check AWS resources configuration
         - If they deviate you can add check to be alerted or to auto remediate
     - <b>IAM Policies</b> can be written explicitly deny access to specific AWS Regions
-        - A <b> Service Control Policy</b> are permissions applied organisation wide
+        - A <b> Service Control Policy</b> are permissions applied organization wide
 
 ## AWS for Government
 ---
@@ -217,12 +217,12 @@
         - public education
         - health care
         - the government itself
-- AWS can be utilised by public sector or organisations developing cloud workloads for the public sector
-    - achieves by <i><u> regulatroy compliance programs</u></i> along with specific government and security controls
+- AWS can be utilized by public sector or organizations developing cloud workloads for the public sector
+    - achieves by <i><u> regulatory compliance programs</u></i> along with specific government and security controls
 
 - ### GovCloud
-    - <b>Federal Risk and Authorisation Management Program (FedRAMP) </b>
-        - A US-government program provides standard approrahc to security assessment, authorization and continous monitoring for cloud products and services.
+    - <b>Federal Risk and Authorization Management Program (FedRAMP) </b>
+        - A US-government program provides standard approach to security assessment, authorization and continuous monitoring for cloud products and services.
     - <b> What is GovCloud?</b>
         - A Cloud service provider (CSP) offers an isolated region to rub FedRAMP workloads
     - AWS GovCloud Regions - allows customers to host sensitive  <b>Controlled Unclassified Information</b> and other workloads
@@ -234,9 +234,9 @@
 - Goals:
     1. Renewable Energy : 
         - planning to be 100% renewable energy by 2025
-        - purchases and retires environamental attributes to cover non-renewable energy 
+        - purchases and retires environmental attributes to cover non-renewable energy 
             - Renewable Energy Credits (RECs)
-            - Guarantess of Origin (Gos)
+            - Guarantees of Origin (Gos)
     2. Cloud Efficiency:
         - 3.6 times more energy efficient that median of US enterprise data centers surveyed
     3. Water Stewardship:

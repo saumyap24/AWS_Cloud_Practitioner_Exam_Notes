@@ -13,7 +13,7 @@
 
  - <b> What is Virtual Machine ?</b>
     - It is a emulation of a Physical computer using software
-    - Server virtualisation allowd to "CREATE" , "COPY" , "RESIZE" or "MIGRATE" the server
+    - Server virtualization allowed to "CREATE" , "COPY" , "RESIZE" or "MIGRATE" the server
     - Multiple VMs can run on same physical server so that costs could be shared between other customers
     - When we launch a Virtual Machine we call it "instance"
 - EC2 is <i> highly configurable server </i> where we can choose AMI that affects options such as:
@@ -34,7 +34,7 @@
         - {when you want to launch a linux or windows server but don't have AWS knowledge eg. Launch a Wordpress}
 
 - <b> Containers </b>
-    - Virtualising a Opearating System (OS) to run multiple workloads on a single OS instance
+    - Virtualizing a Operating System (OS) to run multiple workloads on a single OS instance
     - Containers are generally used in <i> Microservices Architecture </i> (when the application is divided into smaller applications that talk to each other)
 
     - <b> Elastic Container Service (ECS) </b>
@@ -43,19 +43,19 @@
 
     - <b> Elastic Container Registry (ECR) </b>     
         - <i> Repository for container images </i>
-        - In order to launch a conatiners you need an image
+        - In order to launch a containers you need an image
         - An image just means a saved copy
         - A repository means a storage that has version control
     
     - <b> ECS Fargate </b>
         - <i> A serverless orchestration container service </i>
-        - Same as ECS but <u> expects to pay-on-demand per running conatiner  </u>
+        - Same as ECS but <u> expects to pay-on-demand per running container  </u>
         - With ECS have to keep a EC2 server running even if no containers are running 
         - AWS manages the underlying sever, so you don't have to scale or upgrade the EC2 server
     
     - <b> Elastic Kubernetes Service (EKS) </b>
         - <i> a fully managed Kubernetes service </i>
-        - Kuberenetes (K8) is an open source orchestration software created by Google and is generaly the standard for managing microservices 
+        - Kubernetes (K8) is an open source orchestration software created by Google and is generally the standard for managing microservices 
         - {when you need to run Kubernetes as a service}
     
 - <b> Serverless </b>
@@ -89,7 +89,7 @@
 ---
 
  - ### <b> What is Edge Computing ? </b>
-    - Pushing comuting workloads outside of your networks run close to destination locations
+    - Pushing computing workloads outside of your networks run close to destination locations
     - eg. Pushing computing to run on Phones, IOT devices or external servers not within your cloud network.
 
 - <b> What is Hybrid Computing? </b>
@@ -98,7 +98,7 @@
             - Physical rack of servers 
             - Allows to use AWS API and services such as EC2 right in your datacenter
         - <b> AWS Wavelength </b>
-            - Allows <i> to build and launch your application in a telecomm datacenter </i> 
+            - Allows <i> to build and launch your application in a telecom datacenter </i> 
             - By doing this applications have ultra-low latency since they will be pushed over a 5G Network and be closest as possible to end user 
             - eg. Verizon, Vodafone
         - <b> VMWare Cloud on AWS </b>
@@ -115,10 +115,10 @@
 - <b> EC2 Spot Instances, Reserved Instanced and Savings Plan </b>
     - Ways to save on computing
         - by paying full or partially , 
-        - (or) by commiting to a yearly contracts 
-        - (or) by being flexible about availability and interrruption of computing service
+        - (or) by committing to a yearly contracts 
+        - (or) by being flexible about availability and interruption of computing service
 - <b> AWS Batch </b>
-    - Plans , Schedules, and <u> executes batch computing workloads </u> accross the full range of AWS compute services, can utilize Spot Instance to save money
+    - Plans , Schedules, and <u> executes batch computing workloads </u> across the full range of AWS compute services, can utilize Spot Instance to save money
 
 - <b> AWS Compute Optimizer </b>
     - suggests how to <i><u> reduce costs and improve performance </U></i> by using machine learning to analyze you previous usage history
