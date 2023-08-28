@@ -14,8 +14,8 @@
 - <b> What is Solutions Architect? </b>
     - <i> A role in technical organisation that architects a technical solution using multiple systems via researching, documentation and experimenting. </i>
     - Business Factors:
-        - <u>(Security)</u> How secure is this solution?
-        - <u>(Cost)</u> How much is this getting to cost?
+        - <ins>(Security)</ins> How secure is this solution?
+        - <ins>(Cost)</ins> How much is this getting to cost?
 - <b> What is Cloud Architect?</b>
     - A solutions architect that is solely focused on getting technical solutions using cloud services.
     - Business Requirements in designing the architecture:
@@ -28,7 +28,7 @@
     ## High Availability
     ---
 
-    - <i><u> no single point of failure</u></i>
+    - <i><ins> no single point of failure</ins></i>
     - running workload across multiple AZs such that they are always available when any one of them fails --- Applications remains always available
 
     <img src="../images/cloud_architecture/availibilit_zone(1).png" width="50%"/>
@@ -64,9 +64,9 @@
     ## Fault Tolerance
     ---
 
-    - <u><i>no single point of failure </i> </u>
+    - <ins><i>no single point of failure </i> </ins>
     - Preventing the chance of failure
-    - <b> Fail-overs </b> when you have to <i><u>shift traffic</u></i> to a redundant system when the primary system fails
+    - <b> Fail-overs </b> when you have to <i><ins>shift traffic</ins></i> to a redundant system when the primary system fails
     
     <img src="../images/cloud_architecture/fault_tolerant.png" width="30%"/>
         
@@ -85,7 +85,7 @@
             - How do you ensure current live data is not corrupt?
         - Solution:
             - <b> CloudEndure Disaster Recovery</b>
-                - <i><u> Continously replicates your machine into low-cost staging area </u></i> in your target AWS account and preferred Region
+                - <i><ins> Continously replicates your machine into low-cost staging area </ins></i> in your target AWS account and preferred Region
                 - Enables Fast and Reliable recovery in case of IT data center failures.
 
                 <img src="../images/cloud_architecture/CloudEndure_Disaster_recovery.png" width="70%"/>
@@ -93,7 +93,7 @@
 ## Business Continuity Plan (BCP)
 ---
 
- - <i> A document that outlines how a business will continue when an <u>unplanned disruption occurs in services</u></i>
+ - <i> A document that outlines how a business will continue when an <ins>unplanned disruption occurs in services</ins></i>
     - <b> Recovery Point Object (RPO) </b>
         - The max amount of data loss after the unplanned data-loss incident (Expressed in amount of time)
     - <b> Recovery Time Object (RTO)</b>
@@ -107,7 +107,7 @@
     ## Data Visualised
     ---
     - <b> RTO </b>:
-        -<i><u> Max acceptable time delay </u></i>between interruption of service and acceptable of service
+        -<i><ins> Max acceptable time delay </ins></i>between interruption of service and acceptable of service
         - determines what is acceptable time window when service is unavailable , defined by organisation
 
         <img src="../images/cloud_architecture/RTO_graph.png" width="70%"/>

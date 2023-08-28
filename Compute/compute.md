@@ -49,7 +49,7 @@
     
     - <b> ECS Fargate </b>
         - <i> A serverless orchestration container service </i>
-        - Same as ECS but <u> expects to pay-on-demand per running container  </u>
+        - Same as ECS but <ins> expects to pay-on-demand per running container  </ins>
         - With ECS have to keep a EC2 server running even if no containers are running 
         - AWS manages the underlying sever, so you don't have to scale or upgrade the EC2 server
     
@@ -77,7 +77,7 @@
 
 - <b> Bare Metal Instance </b>
     - You can launch EC2 instances without hypervisor so that workloads run directly on the hardware for max performance and control.
-    - <b> M5 and R5 </b> EC2 instances <u> run are bare metal </u>
+    - <b> M5 and R5 </b> EC2 instances <ins> run are bare metal </ins>
     - <b> Bottlerocket </b>
         - A Linux based open source built for running containers on VM or Bare metal hosts 
     - <b> What is High Performance Computing (HPC)? </b>
@@ -118,21 +118,21 @@
         - (or) by committing to a yearly contracts 
         - (or) by being flexible about availability and interruption of computing service
 - <b> AWS Batch </b>
-    - Plans , Schedules, and <u> executes batch computing workloads </u> across the full range of AWS compute services, can utilize Spot Instance to save money
+    - Plans , Schedules, and <ins> executes batch computing workloads </ins> across the full range of AWS compute services, can utilize Spot Instance to save money
 
 - <b> AWS Compute Optimizer </b>
-    - suggests how to <i><u> reduce costs and improve performance </U></i> by using machine learning to analyze you previous usage history
+    - suggests how to <i><ins> reduce costs and improve performance </U></i> by using machine learning to analyze you previous usage history
 
 - <b> EC2 Autoscaling Groups (ASGs) </b>
-    - <u> Automatically adds or remove EC2 servers </u> to meet the current demand of traffic.
+    - <ins> Automatically adds or remove EC2 servers </ins> to meet the current demand of traffic.
     - Will save money and meet capacity since you only run the amount of servers you need
 
 - <b> Elastic Load Balancer (ELB) </b>
-    - Distributes traffic to multiple instance, can re-route traffic from <u> unhealthy instance to healthy instances</u>.
+    - Distributes traffic to multiple instance, can re-route traffic from <ins> unhealthy instance to healthy instances</ins>.
     - Can route traffic to EC2 instances running in different Availability Zones
 
 - <b> AWS Elastic Beanstalk (ELB) </b>
-    - <u> Easily deploys web applications</u> without developers worrying about setting up and understanding the underlying AWS Services
+    - <ins> Easily deploys web applications</ins> without developers worrying about setting up and understanding the underlying AWS Services
     - eg. Heroku
 
 

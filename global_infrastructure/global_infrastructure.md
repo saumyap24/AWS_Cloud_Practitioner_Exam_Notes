@@ -32,8 +32,8 @@
     - 29 wavelength Zones </i>
 
 - <b>Availability Zone </b> is physical location made up of one or more datacenter.
-    - AZs are represented by a region code, followed by a letter indetifier eg. us-east-1<u>a</u>
-    - it is common to run workloads in at least 3 AZs in case any datacenter fails. <u> (High Availability)</u>
+    - AZs are represented by a region code, followed by a letter indetifier eg. us-east-1<ins>a</ins>
+    - it is common to run workloads in at least 3 AZs in case any datacenter fails. <ins> (High Availability)</ins>
     - All AZs in a AWS Region are interconnected with 
         - high bandwidth
         - low-latency networking
@@ -41,7 +41,7 @@
         - dedicated mertro fiber providing high throughput
         - low - latency networking between them
 - <b>Datacenter </b> is a secured building contains hundreds of thousands of computers
-    - A region will generally contain <u> 3 Availability zones</u>
+    - A region will generally contain <ins> 3 Availability zones</ins>
     <img src="../images/global_infrastructure/Az_Regions.png" width="80%"/>
 - Availability zones are redundantly connected to multiple tier 1 transit providers
 <img src="../images/global_infrastructure/AZ-connection.png" width="250"/>
@@ -64,7 +64,7 @@
 
 - ### What is fault domain ?
     - A section of a network that is <i>vulnerable to damage if a critical device or system fails </i>
-    - Purpose: if failure occurs it will not cascade outside that domain, <u> <i> limiting the damage possible</i></u>
+    - Purpose: if failure occurs it will not cascade outside that domain, <ins> <i> limiting the damage possible</i></ins>
         <img src="../images/global_infrastructure/fault_domain_meme.png" width="30%"/>
     - <b> What is fault level?</b>
         - a collection of fault domains
@@ -77,10 +77,10 @@
     <img src="../images/global_infrastructure/fault_level_fault_domain.png" width="70%"/>
 
 - ### Amazon regions and availability zones
-    - Each Amazon region is completely <i><u>isolated</u></i> from the other Amazon regions
-        - Achieves <b><i><u>greatest possible fault tolerance and stability</u></b></i>
-    - Each availability zone is <i><u> isolated</u></i> but AZs are connected in a Region through <i>low-latency links</i>
-        - Each availability zone is designed as <b><i><u>indenpendent failure zone</i></b></u> <i>{Failure zone is Fault Domain}</i>
+    - Each Amazon region is completely <i><ins>isolated</ins></i> from the other Amazon regions
+        - Achieves <b><i><ins>greatest possible fault tolerance and stability</ins></b></i>
+    - Each availability zone is <i><ins> isolated</ins></i> but AZs are connected in a Region through <i>low-latency links</i>
+        - Each availability zone is designed as <b><i><ins>indenpendent failure zone</i></b></ins> <i>{Failure zone is Fault Domain}</i>
         - <b> Failure Zone</b> 
             - Availibility zones are physically separated by metropolitan region and are located in low flood zones
             - Uninterruptible power supply (UPS) and onsite generation facilities
@@ -92,16 +92,16 @@
 
 ## AWS Global Network
 ---
-- represents <b><i><u>inter connections between AWS Global Infrastructure</u></i></b>
+- represents <b><i><ins>inter connections between AWS Global Infrastructure</ins></i></b>
 - referred as <i>"The backbone of AWS"</i>
 - a private expressway - where things can move very fast between datacenters
     - <b>Edge locations: </b> 
         - to get data in and out of AWS very quickly
-        - acts as <u><i>on and off ramps</i></u> to AWS Global Network
-    - <b>AWS Global <u>Accelerator</u> and AWS S3 Transfer <u>Acceleration </u> </b>
-        - Use <i>"Edge locations"</i> as <u>on-ramp</u> to <u>quickly</u> reach AWS resources in other regions by traversing the fast AWS Global Network
+        - acts as <ins><i>on and off ramps</i></ins> to AWS Global Network
+    - <b>AWS Global <ins>Accelerator</ins> and AWS S3 Transfer <ins>Acceleration </ins> </b>
+        - Use <i>"Edge locations"</i> as <ins>on-ramp</ins> to <ins>quickly</ins> reach AWS resources in other regions by traversing the fast AWS Global Network
     - <b> Amazon CloudFront (CDN)</b>
-        - Use <i>"Edge locations"</i> as <u>off-ramp</u> to provide at the Edge storage and compute near the end user
+        - Use <i>"Edge locations"</i> as <ins>off-ramp</ins> to provide at the Edge storage and compute near the end user
 - <b> VPC Endpoints </b>
     - <i>Ensures resources stay within the AWS Network</i> and do not traverse over Public Network
           
@@ -110,35 +110,35 @@
 - intermediate location between AWS region and end user 
 - this could be datcenter or collection of hardware
     - For AWS a PoP is
-        - a data center owned by <i> <u>AWS or a trusted partner</u></i> that is utilized by AWS services related for <i> content delivery or expedited upload</i>
+        - a data center owned by <i> <ins>AWS or a trusted partner</ins></i> that is utilized by AWS services related for <i> content delivery or expedited upload</i>
 - Pop Resources:
     - Edge locations 
-        - are datacenters that hold  cached (copy) on the <u><i>most popular files</i></u> 
+        - are datacenters that hold  cached (copy) on the <ins><i>most popular files</i></ins> 
         - eg. web pages, images and videos
         - so that delivery distance to end users is less
     - Regional Edge Caches
-        - are datacenters that hold larger cache on <u><i> less-popular files</i></u>
+        - are datacenters that hold larger cache on <ins><i> less-popular files</i></ins>
         - to reduce the full round trip and cost of transfer fees
 
     <img src="../images/global_infrastructure/PoP_resources.png" width="60%"/>
 - ### Tier 1
     - PoPs live at the edge/intersection of two netwroks 
-    - Tier 1 network can reach every other network on the internet <i><u> without purchasing IP transit or paying for peering </u></i>
+    - Tier 1 network can reach every other network on the internet <i><ins> without purchasing IP transit or paying for peering </ins></i>
     - AWS AZs are redundantly connected to multiple <i>tier-1 transit providers</i>
 
     <img src="../images/global_infrastructure/PoP_tier_1.png" width="60%"/>
 
 - ### AWS Services uses PoPs
-    - for <u><i>content delivery or expedited upload</i></u>
+    - for <ins><i>content delivery or expedited upload</i></ins>
     - <b> Amazon CloudFront </b>
         - point the website to CloudFront so that it will route requests to nearest <i>"Edge Location cache"</i>
-        - allows to choose an <u>origin</u> (such as web server or storage ) that will be source of cached
+        - allows to choose an <ins>origin</ins> (such as web server or storage ) that will be source of cached
         - caches the contents returned by origin to various Edge Locations in the world
     - <b> Amazon S3 Transfer Acceleration </b>
-        - allows to generate <i>specific URL</i> that can be used by end users to <u><i>upload files to nearby "Edge Location" </i></u>
-        - Once the file is uploaded to Edge Location it <u><i>moves much faster</i></u> within AWS Network to reach S3
+        - allows to generate <i>specific URL</i> that can be used by end users to <ins><i>upload files to nearby "Edge Location" </i></ins>
+        - Once the file is uploaded to Edge Location it <ins><i>moves much faster</i></ins> within AWS Network to reach S3
     - <b> Amazon Global Accelerator </b>
-        - global accelerator deploys within Edge Location such that <i><u>user traffic is sent to "Edge Location" instead of web application</i></u>
+        - global accelerator deploys within Edge Location such that <i><ins>user traffic is sent to "Edge Location" instead of web application</i></ins>
         - finds the optimal path from the end user to web-servers
 
 ## AWS Direct Connect
@@ -164,7 +164,7 @@
 
 ## AWS Local Zones
 ---
-- <i><b>Local Zones</b> are located very close to highly populated area to provide <u>very low-latency performance (single digit eg. 7ms)</u> for that area.</i>
+- <i><b>Local Zones</b> are located very close to highly populated area to provide <ins>very low-latency performance (single digit eg. 7ms)</ins> for that area.</i>
 - LA, California was the first Local Zone to be deployed
     - It is a logical extension of the US-West Region
     - Identifier looks like: <b> us-west-2-lax-1a</b>
@@ -183,8 +183,8 @@
 
 ## AWS Wavelength Zones
 --- 
-- <b>AWS Wavelength Zones</b> allows for <i><u>edge-computing on 5G Networks</u></i>
-- Applications have <i><u> ultra-low latency </u></i> being close to users
+- <b>AWS Wavelength Zones</b> allows for <i><ins>edge-computing on 5G Networks</ins></i>
+- Applications have <i><ins> ultra-low latency </ins></i> being close to users
 - AWS partnered with Telecom companies to utilize 5G networks. (e.g. Verizon, Vodafone, SK telecom)
 - Create a Subnet tied to a wavelength zone and then you can launch virtual machines (VMs) to the edge of the targeted 5G Networks
  
@@ -218,7 +218,7 @@
         - health care
         - the government itself
 - AWS can be utilized by public sector or organizations developing cloud workloads for the public sector
-    - achieves by <i><u> regulatory compliance programs</u></i> along with specific government and security controls
+    - achieves by <i><ins> regulatory compliance programs</ins></i> along with specific government and security controls
 
 - ### GovCloud
     - <b>Federal Risk and Authorization Management Program (FedRAMP) </b>

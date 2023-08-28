@@ -27,7 +27,7 @@
 - <b> Pay as you go </b> 
     - pay only when you use computing devices and only for how much you use
 - <b> Benefit mass economies from scale </b> 
-    - usage of cloud services from hundreds of thousands of customers which leads to higher economy of scale (<i><u>lower pay-as-you-go prices</u></i>) 
+    - usage of cloud services from hundreds of thousands of customers which leads to higher economy of scale (<i><ins>lower pay-as-you-go prices</ins></i>) 
 - <b> Stop guessing capacity </b>
     - access as you want or little capacity as you need and scale up and down with only few minutes of notice
 - <b> Increase speed and agility </b> 
@@ -36,7 +36,7 @@
     - companies can focus on business and customers instead of maintaining data centers 
     - be free of powering physical infrastructure (racking,stacking and heavylifting)
 - <b> Go global in minutes </b> 
-    - applications can be deployed in multiple regions around the world with just few clicks provides <i><u> low latency and better experince at minimal cost</u></i>
+    - applications can be deployed in multiple regions around the world with just few clicks provides <i><ins> low latency and better experince at minimal cost</ins></i>
 
 ## Types of Cloud Computing 
 --- 
@@ -109,7 +109,7 @@
     - pros:
         - greatest fault tolerance
         - stbility
-        - availability zone in a region are connected through <i><u> low latency links</u></i>
+        - availability zone in a region are connected through <i><ins> low latency links</ins></i>
 - flexible to place instances and store data in multiple regions
  
 - [For more information...](../global_infrastructure/global_infrastructure.md)

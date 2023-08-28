@@ -30,7 +30,7 @@
 
 - Relational Database : designed for analytic workloads and a column-oriented data-store
 - Companies will have terabytes and millions of rows of data 
-- Data warehouses generally perform <u> aggregation</u>
+- Data warehouses generally perform <ins> aggregation</ins>
     - aggregation is is grouping data eg. finding a total or average
     - Data warehouses are optimised around columns since they need quickly aggregate column data 
 - Data warehouses are generally designed be HOT
@@ -43,7 +43,7 @@
 ## What is a Key Value Store ?
 ---
 - <i> A key-value database is a type of non-relational database (NoSQL) that uses a simple key-value method to store data </i>
-    - Stores a <u> unique key </u>  alongside a value
+    - Stores a <ins> unique key </ins>  alongside a value
     - will interpret this data resembling a dictionary 
     - can resemble tabular data, it does not have to have the consistent columns per row
 -Due to simple design so they can scale well beyond a relational database
@@ -62,17 +62,17 @@
 ## NOSQL Database Services
 ---- 
 - ### DynamoDB
-    - a serverless <u> NOSQL key/Value and document database</u>
-    - designed to scale to billions of records  with consistent data return in at <u>least a second</u>
-    - It is AWS's <u> flagship database service </U> meaning it is cost-effective and very fast 
+    - a serverless <ins> NOSQL key/Value and document database</ins>
+    - designed to scale to billions of records  with consistent data return in at <ins>least a second</ins>
+    - It is AWS's <ins> flagship database service </U> meaning it is cost-effective and very fast 
     - In 2019, Amazon shutdown their last Oracle database and completed their migration to DynamoDB. They had 7,500 Oracle databases and 75 perabytes of data. With DynamoDB they reduce costs by 60% and reduce latency by 40%
-    - It is a <u>massively scalable database </u>
+    - It is a <ins>massively scalable database </ins>
 - ### DocumentDB
-    - A NOSQL <u> document database </u> that is <u>"MongoDB compatible"</u>
+    - A NOSQL <ins> document database </ins> that is <ins>"MongoDB compatible"</ins>
     - MongoDB is very popular NOSQL among developers there were open-source licensing issues around using open-source MongoDB , so aws got aorund it by just building their own MongoDB database
     - <i> when you want a MongoDB database </i>
 - ### Amazon KeySpaces 
-    - A fully managed <u> Apache Cassandra database </u>
+    - A fully managed <ins> Apache Cassandra database </ins>
     - Cassandra is an open-source NOSQL key/value database similar to DynamoDB in that is columnar store database but has some additional functionality
     - <i> when you want to use Apache Casandra </i>
 
@@ -93,7 +93,7 @@
        - <b> Aurora </b> - Fully managed database 
             - <b> Aurora </b> 
                 - fully managed database, 
-                - database of either <u>MYSQL (5X faster) and PSQL (3X faster) database </u>
+                - database of either <ins>MYSQL (5X faster) and PSQL (3X faster) database </ins>
                 - <i> When you want a highly available, durable, scalable and secure relational database for Postgres or MySQL then Aurora is correct fit</i>
         - <b> Aurora Serverless </b> 
                 - serverless on-demand version of Aurora.
@@ -107,26 +107,26 @@
 ## Other Database Services
 ---
 - <b> RedShift </b>
-    - <u> petabyte-size data-warehouse </u>
+    - <ins> petabyte-size data-warehouse </ins>
     - Data warehouses
-        - are for <u>Online Analytical Procesing (OLAP)</u>
+        - are for <ins>Online Analytical Procesing (OLAP)</ins>
         - can be expensive because they are keeping data "hot"
         - "HOT" means we can run a very complex query and a large amount of data and get that data very fast 
         - Usage: when you want to quickly generate analytics or reports from a large amount of data 
 - <b> ElasticCache </b>
-    - a managed database of the <u> in-memory and caching open-source databases </u>
+    - a managed database of the <ins> in-memory and caching open-source databases </ins>
     - Redis or Memcached 
-    - Usage: when you want to <u> improve the performance of application </u> by adding a caching layer in-front of web-server or database
+    - Usage: when you want to <ins> improve the performance of application </ins> by adding a caching layer in-front of web-server or database
 - <b> Neptune </b>
-    - a managed <u> graph database </u>
+    - a managed <ins> graph database </ins>
     - Data is represented in interconnected nodes
     - Usage: when you need to understand the connections between data eg. Mapping Fraud Rings or Social Media Relationships
 - <b> Amazon Timestreams </b>
-    - a fully managed <u>time series database</u>
+    - a fully managed <ins>time series database</ins>
     - Related to Devices that send lot of data that are time-sensitive such as IOT devices 
     - Usage: When you need to measure how things change over time
 - <b> Amazon Quantum Ledger Database </b>
-    - a fully managed <u> ledger database </u> that provides <i> transparent, immutable and cryptographically variable transaction logs </i>
+    - a fully managed <ins> ledger database </ins> that provides <i> transparent, immutable and cryptographically variable transaction logs </i>
     - Usage: when you need to record history of financial activities that can be trusted
 - <b> Database Migration Service </b>
     - a database migration service
